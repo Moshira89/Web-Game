@@ -1,19 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background-color: #f4f4f4;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-  
+
 .container {
-    background: #fff;
+    background: white;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -21,29 +21,47 @@ body {
     max-width: 500px;
     width: 90%;
 }
-  
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
 #game p {
     margin: 10px 0;
 }
-  
+
 button {
     margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-  
-button:hover {
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
     color: white;
 }
-  
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 #hangman div {
     display: none;
     width: 5px;
     background: black;
     position: absolute;
 }
-  
+
 #head {
     width: 30px;
     height: 30px;
@@ -53,16 +71,22 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
 }
-  
-  
+
+#message {
+    color: #007bff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
     .container {
-      max-width: 700px;
+        max-width: 700px;
     }
-  
+
     button {
-      font-size: 18px;
+        font-size: 18px;
     }
 }
+
   
   
