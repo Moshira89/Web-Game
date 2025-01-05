@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styesheet" git add .
+    ref="./styles/webgame.css">
+    <script src="./script/webgame.js"defer></script>
+    <script src="./script/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman Game</h1>
+        <div id="stats">
+          <p>Total Games: <span id="totalGames">0</span></p>
+          <p>Wins: <span id="wins">0</span></p>
+          <p>Losses: <span id="losses">0</span></p>
+        </div>
+
+        <div id="hangman">
+          <div id="head"></div>
+          <div id="body"></div>
+          <div id="left-arm"></div>
+          <div id="right-arm"></div>
+          <div id="left-leg"></div>
+          <div id="right-leg"></div>
+        </div>
+    
+        <div id="game">
+          <p id="wordDisplay">_ _ _ _ _</p>
+          <p>Attempts Left: <span id="attemptsLeft">6</span></p>
+          <p>Guessed Letters: <span id="guessedLetters"></span></p>
+        </div>
+    
+        <input type="text" id="guessInput" maxlength="1" placeholder="Enter a letter">
+        <button id="guessButton" type="button">Guess</button>
+        <button id="startButton" type="button">Start Game</button>
+        <button id="replayButton" type="button" style="display: none;">Replay</button>
+        <p id="message"></p>
+      </div>
+</body>
+</html>
